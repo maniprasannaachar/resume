@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+header #dark-mode-toggle {
+    margin-top: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+    align-items: self-end;
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background: #fff;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease;
+}
+
+/* Collapsible sections */
+.collapsible-section .content {
+    display: none;
+}
+
+.collapsible-section.active .content {
+    display: block;
+}
+
+.collapsible-section .toggle-button {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #4CAF50;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode header {
+    background-color: #333;
+    color: #4CAF50;
+}
+
+.dark-mode section {
+    background-color: #444;
+    color: #f4f4f4;
+}
